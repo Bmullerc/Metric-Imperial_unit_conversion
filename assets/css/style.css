@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  text-align: center;
+  font-size: 14px;
+  font-weight: 400;
+  color: #FFF;
+  background-color: #1C1C1C;
+}
+
+.container {
+  height: 550px;
+  width: 550px;
+  background-color: #1F2937;
+  margin: 5em auto;
+}
+
+@media (max-width: 600px) {
+  .container {
+    height: 100vh;
+    width: 90%;
+  }
+}
+
+header {
+  padding: 1em 3em 1em 3em;
+  height: 250px;
+  background-image: linear-gradient(40deg, #65cad7 0%, #4ac4e3 2%, #33c0f0 7%, #33b8fa 14%, #4dafff 25%, #6b9fff 38%, #9092fe 53%, #b583f1 70%, #d16adc 86%, #e953c1 100%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: .5em;
+}
+
+@media (max-width: 600px) {
+  header {
+    height: 40%;
+  }
+}
+
+header .header--title {
+  font-size: 2em;
+}
+
+header .number-display {
+  font-size: 5em;
+}
+
+header .number-to-convert {
+  margin: 0 auto;
+  font-family: 'Inter', sans-serif;
+  border: none;
+  padding: .3em;
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header .number-to-convert:focus, header .number-to-convert:hover {
+  background-color: #1C1C1C;
+  color: #FFF;
+  -webkit-box-shadow: 0 0 3px #e953c1;
+          box-shadow: 0 0 3px #e953c1;
+}
+
+header label {
+  margin-bottom: -.8em;
+  font-size: .8em;
+  color: #FFF;
+}
+
+header .input-error {
+  margin-top: .5em;
+  color: #1F2937;
+  font-weight: 800;
+}
+
+header .submit-btn {
+  width: 6.5em;
+  padding: .3em 1em;
+  border: none;
+  text-transform: uppercase;
+  color: #FFF;
+  background-color: #1F2937;
+  font-weight: 400;
+  letter-spacing: .15em;
+  font-family: "Inter";
+  -webkit-transition: all .3s ease-in-out;
+  transition: all .3s ease-in-out;
+}
+
+header .submit-btn:hover {
+  color: #e953c1;
+  cursor: pointer;
+  -webkit-box-shadow: 0 0 3px #e953c1;
+          box-shadow: 0 0 3px #e953c1;
+}
+
+.main--content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2em;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 3em;
+  color: #D2D2D2;
+}
+
+.main--content .content--title {
+  margin-bottom: .7em;
+  font-size: 1em;
+  color: #FFF;
+}
+/*# sourceMappingURL=style.css.map */

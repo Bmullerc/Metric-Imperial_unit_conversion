@@ -1,0 +1,133 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;800&display=swap');
+
+// * Variables *
+// Colors
+$background:#1C1C1C;
+$title: #FFF;
+$container: #1F2937;
+$pink: hsl(316deg, 77%, 62%);
+$blue: hsl(187deg, 59%, 62%);
+$paragraph: #D2D2D2;
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+
+body {
+    font-family: 'Inter', sans-serif;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 400;
+    color: $title;
+    background-color: $background;
+}
+
+.container {
+    height: 550px;
+    width: 550px;
+    background-color: $container;
+    margin: 5em auto;
+
+    @media (max-width: 600px) {
+        height: 100vh;
+        width: 90%; 
+    }
+}
+
+header {
+    padding: 1em 3em 1em 3em;
+    height: 250px;
+    background-image: linear-gradient(
+    40deg,
+    hsl(187deg, 59%, 62%) 0%,
+    hsl(192deg, 73%, 59%) 2%,
+    hsl(195deg, 86%, 57%) 7%,
+    hsl(200deg, 95%, 59%) 14%,
+    hsl(207deg, 100%, 65%) 25%,
+    hsl(219deg, 100%, 71%) 38%,
+    hsl(239deg, 98%, 78%) 53%,
+    hsl(267deg, 80%, 73%) 70%,
+    hsl(294deg, 62%, 64%) 86%,
+    hsl(316deg, 77%, 62%) 100%
+    );
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    gap: .5em;
+
+    @media (max-width: 600px) {
+        height: 40%;
+    }
+    
+    .header--title {
+        font-size: 2em;
+    }
+    
+    .number-display {
+        font-size: 5em;
+    }
+
+    .number-to-convert {
+        margin: 0 auto;
+        font-family: 'Inter', sans-serif;
+        border: none;
+        padding: .3em;
+        transition: all .3s ease-in-out;
+
+        &:focus, &:hover {
+            background-color: #1C1C1C;
+            color: $title;
+            box-shadow: 0 0 3px $pink;
+        }
+    }
+
+    label {
+        margin-bottom: -.8em;
+        font-size: .8em;
+        color: $title;
+    }
+
+    .input-error {
+        margin-top: .5em;
+        color: $container;
+        font-weight: 800;
+    }
+
+    .submit-btn {
+        width: 6.5em;
+        padding: .3em 1em;
+        border: none;
+        text-transform: uppercase;
+        color: $title;
+        background-color: $container;
+        font-weight: 400;
+        letter-spacing: .15em;
+        font-family: "Inter";
+        transition: all .3s ease-in-out;
+
+        &:hover {
+            color: $pink;
+            cursor: pointer;
+            box-shadow: 0 0 3px $pink;
+        }
+    }
+}
+
+.main--content {
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+    color: $paragraph;
+
+    .content--title {
+        margin-bottom: .7em;
+        font-size: 1em;
+        color: $title;
+    }
+}
