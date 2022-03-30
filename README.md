@@ -8,11 +8,11 @@ Build a Metric / Imperial unit conversion tool to simply convert a given value t
 
 # My Solution
 
-**Link
+**Link**
 
 - Live Site URL: [Live Site]()
 
-**Screenshot
+**Screenshot**
 
 ![Working Preview](./Working-Preview.png)
 
